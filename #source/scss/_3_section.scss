@@ -1,0 +1,62 @@
+.section-3 {
+    margin-top: 150px;
+    background-image: url('../../img/1_section/bg_1section.webp');
+    background-repeat: no-repeat;
+    background-size: 100% 75%;
+    background-position: top 30px center;
+    .container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        max-width: 1170px;
+        margin: 0 auto;
+        padding: 90px 0;
+        padding-bottom: 120px;
+        background-image:
+        url('../../img/1_section/pantoflex.png'),
+        url('../../img/1_section/pantoflex_box.png');
+        background-repeat: no-repeat;
+        background-size: 30%, 35%;
+        background-position: top 94px right 28px, top 5px right 137px;
+        h2 {
+            margin-top: -16px;
+            font-size: 60px;
+            font-weight: 700;
+            line-height: 40px;
+            color: #3b3944;
+            span {
+                color: #5774b8;
+            }
+        }
+        p {
+            margin-top: 41px;
+            color: #3b3944;
+            font-size: 28px;
+            font-weight: 400;
+            line-height: 30px;
+        }
+        .order-form-btn {
+            margin-top: 50px;
+            width: 220px;
+            height: 65px;
+            border: none;
+            border-radius: 5px;
+            background-color: #36bde3;
+            box-shadow: 0 4px 0 #2d96cc;
+            cursor: pointer;
+            .strong {
+                color: #ffffff;
+                font-size: 27px;
+                font-weight: 500;
+                line-height: 23px;
+            }
+            .normal {
+                color: #ffffff;
+                font-size: 21px;
+                font-weight: 500;
+                line-height: 21.87px;
+            }
+        }
+    }
+}
