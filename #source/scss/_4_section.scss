@@ -1,3 +1,187 @@
 .section-4 {
-    height: 500px;
+    margin-top: 80px;
+    .container {
+        margin: 0 auto;
+        max-width: 1170px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: flex-start;
+        flex-wrap: wrap;
+        .part-1 {
+            padding-top: 11px;
+            width: 51%;
+            display: flex;
+            flex-direction: column;
+            h3 {
+                color: #2e2c35;
+                font-size: 51px;
+                font-weight: 700;
+                line-height: 52.53px;
+                letter-spacing: -1px;
+                span {
+                    color: #5774b8;
+                }
+            }
+            .img-box {
+                margin-top: 60px;
+                width: 100%;
+                height: auto;
+                overflow: hidden;
+                img {
+                    margin-left: 20px;
+                    margin-right: -20px;
+                    width: auto;
+                    height: auto;
+                }
+            }
+        }
+        .part-2 {
+            width: 49%;
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            .row {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                .card {
+                    width: 47%;
+                    h4 {
+                        position: relative;
+                        color: #2e2c35;
+                        font-size: 24px;
+                        font-weight: 700;
+                        line-height: 50px;
+                        &::after {
+                            display: block;
+                            position: absolute;
+                            left: 0;
+                            bottom: -3px;
+                            width: 88%;
+                            height: 3px;
+                            border-radius: 2px;
+                            background-color: #e0e9ee;
+                            content: '';
+                        } 
+                    }
+                    .img-box {
+                        display: flex;
+                        flex-direction: row;
+                        justify-content: flex-start;
+                        align-items: center;
+                        height: 213px;
+                    }
+                    p {
+                        padding-right: 17px;
+                        margin-top: -13px;
+                        margin-bottom: 62px;
+                        color: #8e8c95;
+                        font-size: 18px;
+                        font-weight: 400;
+                        line-height: 24px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media all and (max-width: 1200px) {
+    .section-4 {
+        .container {
+            padding: 0 20px;
+            .part-1 {
+                h3 {
+                font-size: 40px;
+                line-height: 44px;
+                }
+                .img-box {
+                    margin-top: 40px;
+                    img {
+                        width: 80%;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media all and (max-width: 1140px) {
+    .section-4 {
+        .container {
+            padding: 0 20px;
+        }
+    }
+}
+
+@media all and (max-width: 960px) {
+    .section-4 {
+        margin-top: 70px;
+        .container {
+            flex-direction: column;
+            .part-1 {
+                width: 100%;
+                flex-direction: row;
+                .img-box {
+                    margin-top: 0;
+                }
+            }
+            .part-2 {
+                margin-top: 40px;
+                width: 100%;
+            }
+        }
+    }
+}
+
+@media all and (max-width: 720px) {
+    .section-4 {
+        margin-top: 0;
+        .container {
+            .part-1 {
+                h3 {
+                    font-size: 35px;
+                    line-height: 45px;
+                }
+            }
+        }
+    }
+}
+
+@media all and (max-width: 540px) {
+    .section-4 {
+        .container {
+            .part-1 {
+                justify-content: center;
+                h3 {
+                    font-size: 30px;
+                    line-height: 35px;
+                    text-align: center;
+                }
+                .img-box {
+                    display: none;
+                }
+            }
+            .part-2 {
+                .row {
+                    flex-direction: column;
+                    .card {
+                        width: 100%;
+                        h4 {
+                            font-size: 20px;
+                        }
+                        .img-box {
+                            height: 150px;
+                        }
+                        p {
+                            margin-bottom: 10px;
+                            font-size: 18px;
+                            line-height: 22px;
+                        }
+                    }
+                }
+            }
+        }
+    }
 }

@@ -4,7 +4,6 @@
     top: 0;
     left: 0;
     width: 100%;
-    // top: -20px;
     .container {
         display: flex;
         justify-content: space-between;
@@ -46,6 +45,40 @@
                         line-height: 26px;
                         cursor: pointer;
                     }
+                }
+            }
+        }
+    }
+}
+
+@media all and (max-width: 1200px) {
+    .header {
+        .container {
+            padding: 0 20px;
+        }
+    }
+}
+
+@media all and (max-width: 720px) {
+    .header {
+        top: -15px;
+        .container {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: nowrap;
+        }
+    }
+}
+
+@media all and (max-width: 540px) {
+    .header {
+        .container {
+            justify-content: space-around;
+            align-items: center;
+            flex-wrap: wrap;
+            .nav-menu {
+                ul {
+                    justify-content: space-around;
                 }
             }
         }
